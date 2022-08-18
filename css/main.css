@@ -896,6 +896,11 @@ textarea:hover, textarea:focus {
   display: block;
 }
 
+.portfolio__item:hover .project__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .project__thumb {
   position: relative;
   overflow: hidden;
@@ -918,11 +923,6 @@ textarea:hover, textarea:focus {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__item:hover .project__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .project__box {
