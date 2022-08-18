@@ -1,0 +1,39 @@
+.advantage__list {
+  display: flex;
+}
+
+.advantage__item {
+  width: calc((100%-90px) / 4);
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--filter-color);
+}
+
+.advantage__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.skills__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+
+  color: var(--main-color);
+}
+
+.skills__text {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--text-color);
+}
