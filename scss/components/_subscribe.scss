@@ -3,7 +3,9 @@
 }
 
 .subscribe {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__label {
@@ -27,6 +29,10 @@
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
   }
 }
 
