@@ -8,9 +8,6 @@
 .work-title,
 .team-title,
 .client-title {
-  @media screen and (max-width: 1199px) {
-    text-align: center;
-  }
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -18,6 +15,13 @@
   text-align: center;
 
   color: var(--main-color);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .work__list {

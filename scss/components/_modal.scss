@@ -30,6 +30,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
+
+  @media screen and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .modal-btn {
@@ -179,6 +184,11 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
+
+  @media screen and (max-width: 1199px) {
+    font-size: 11px;
+    line-height: 1.17;
+  }
 }
 
 .checkbox__link {

@@ -112,15 +112,16 @@ img {
   line-height: 1.19;
 }
 
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
 .logo-footer {
   margin: 0;
   color: var(--title-color);
-}
-
-@media screen and (max-width: 767px) {
-  .logo-footer {
-    text-align: center;
-  }
 }
 
 .logo-item {
@@ -298,6 +299,13 @@ header {
   color: var(--title-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -331,6 +339,13 @@ header {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .modal-btn {
@@ -502,6 +517,13 @@ textarea:hover, textarea:focus {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox__agreement {
+    font-size: 11px;
+    line-height: 1.17;
+  }
+}
+
 .checkbox__link {
   position: relative;
   color: var(--accent-color);
@@ -515,6 +537,13 @@ textarea:hover, textarea:focus {
   width: 100%;
   height: 1px;
   background: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .advantage {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -594,6 +623,9 @@ textarea:hover, textarea:focus {
   .team-title,
   .client-title {
     text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
 
@@ -638,6 +670,13 @@ textarea:hover, textarea:focus {
 
 .team {
   background-color: var(--filter-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -721,6 +760,13 @@ textarea:hover, textarea:focus {
 .networks__link:hover, .networks__link:focus {
   background: var(--accent-color);
   fill: var(--filter-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .client__list {

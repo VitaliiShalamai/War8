@@ -1,3 +1,10 @@
+.advantage {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .advantage__list {
   @media screen and (min-width: 768px) {
     display: flex;
