@@ -1,5 +1,9 @@
 .subscribe-box {
   margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .subscribe {
@@ -42,6 +46,9 @@
   justify-content: center;
   padding: 0;
   fill: var(--title-color);
+  @media screen and (max-width: 767px) {
+    margin: auto;
+  }
 }
 
 .subscribe-btn:hover {

@@ -1,9 +1,13 @@
 .advantage__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .advantage__item {
-  width: calc((100%-90px) / 4);
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-90px) / 4);
+  }
 }
 
 .skills__box {
@@ -17,7 +21,9 @@
 }
 
 .advantage__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
 }
 
 .skills__title {

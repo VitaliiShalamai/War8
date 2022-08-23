@@ -1,5 +1,8 @@
 .nav {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -43,6 +46,9 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts__item:not(:last-child) {

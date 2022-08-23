@@ -5,6 +5,12 @@
   background-color: var(--background-color);
 }
 
+.footer-address {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
 .office__list {
   margin-top: 20px;
   font-style: normal;
@@ -37,12 +43,20 @@
 }
 
 .footer-box {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .community {
   margin-left: 70px;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }
 
 .footer-title,

@@ -11,6 +11,9 @@
 .logo-footer {
   margin: 0;
   color: var(--title-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .logo-item {

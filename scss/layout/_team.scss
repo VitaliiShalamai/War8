@@ -3,7 +3,9 @@
 }
 
 .team__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .team__item {
@@ -13,7 +15,14 @@
   border-radius: 0px 0px 4px 4px;
   background: var(--title-color);
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
