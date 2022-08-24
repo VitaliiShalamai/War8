@@ -44,15 +44,30 @@
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+  }
+}
+
+.contacts__item {
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+    padding-bottom: 10px;
+    }
   }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 50px;
+ @media screen and (min-width: 1200px) {
+   margin-right: 50px;
+ }
 }
 
 .contacts__link {

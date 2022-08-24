@@ -6,7 +6,7 @@
 }
 
 .footer-address {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -51,11 +51,25 @@
 
 .community {
   margin-left: 70px;
+  padding: 20px;
   @media screen and (max-width: 767px) {
     margin: 0;
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
+  }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 145px;
+   }
+}
+
+.tablet-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 60px;
   }
 }
 
@@ -68,6 +82,9 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--title-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {}
+  text-align: center;
 }
 
 .footer-link {
