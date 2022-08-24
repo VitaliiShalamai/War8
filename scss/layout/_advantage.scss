@@ -8,12 +8,26 @@
 .advantage__list {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
   }
 }
 
 .advantage__item {
   @media screen and (min-width: 1200px) {
     width: calc((100%-90px) / 4);
+  }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin: 15px;
   }
 }
 
@@ -28,7 +42,7 @@
 }
 
 .advantage__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
 }
