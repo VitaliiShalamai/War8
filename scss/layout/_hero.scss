@@ -3,6 +3,11 @@
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--background-color);
+
+  @media screen and (min-width: 768px)and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .main-background {

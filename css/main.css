@@ -165,11 +165,6 @@ header {
   z-index: 1;
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 @media screen and (min-width: 768px) {
   .header {
     display: -webkit-box;
@@ -178,6 +173,15 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -227,6 +231,12 @@ header {
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav__link--current::after {
+    bottom: -2px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -290,6 +300,13 @@ header {
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--background-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .main-background {

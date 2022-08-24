@@ -13,7 +13,12 @@ header {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
-  padding-top: 24px;
-  padding-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
