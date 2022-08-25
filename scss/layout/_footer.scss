@@ -56,44 +56,6 @@
 }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//  footer-box {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     flex-direction: row;
-//     justify-content: space-around;
-//     align-items: normal;
-//   }
-
-//   community {
-//     margin-top: 0px
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//  footer-box {
-//     display: flex;
-//     align-items: flex-start;
-//     flex-direction: row;
-//   }
-
-//   &__address {
-//     text-align: start;
-//     margin-right: 70px;
-
-//   }
-
-//  community {
-//     &__title {
-//       text-align: start;
-//     }
-
-//     margin-top: 12px;
-
-//   }
-// }
-
 .community {
   margin-left: 70px;
   padding: 20px;
@@ -103,10 +65,6 @@
     margin-bottom: 60px;
     text-align: center;
   }
-
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // margin-left: 145px;
-   }
 }
 
 .footer-title,
