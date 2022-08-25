@@ -85,6 +85,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -110,7 +111,6 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -119,11 +119,22 @@ img {
   line-height: 1.19;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .logo {
     font-size: 24px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
   }
 }
 
@@ -167,7 +178,6 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 80px;
   background-color: var(--title-color);
   z-index: 1;
 }
@@ -180,17 +190,33 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    min-height: 80px;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -200,6 +226,23 @@ header {
   .header {
     padding-top: 24px;
     padding-bottom: 25px;
+  }
+}
+
+.mobile-btn {
+  border: none;
+  background-color: transparent;
+  display: none;
+  margin-left: auto;
+}
+
+.mobile-btn__icon {
+  padding: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-btn {
+    display: block;
   }
 }
 

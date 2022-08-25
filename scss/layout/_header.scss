@@ -4,26 +4,47 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 80px;
   background-color: var(--title-color);
   z-index: 1;
 
   @media screen and (min-width: 320px)and (max-width: 767px) {
     display: flex;
     align-items: center;
+    height: 60px;
   }
+    @media screen and (min-width: 1200px) {
+      min-height: 80px;
+    }
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+  @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+}
+
+.mobile-btn {
+  border: none;
+  background-color: transparent;
+  display: none;
+  margin-left: auto;
+
+  &__icon {
+    padding: 0px;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 }
+
