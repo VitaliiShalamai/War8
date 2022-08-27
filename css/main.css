@@ -228,12 +228,6 @@ header {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header {
     padding-top: 21px;
@@ -1355,37 +1349,114 @@ textarea:hover, textarea:focus {
 .menu-btn {
   border: none;
   background-color: transparent;
-  display: none;
+  display: block;
   margin-left: auto;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 
-.menu-btn__icon {
-  padding: 0px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-btn {
-    display: block;
+    display: none;
   }
 }
 
-.mobile-menu {
+.mob-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px 48px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  padding: 48px 40px;
+  overflow-y: scroll;
   background: white;
   opacity: 1;
+  z-index: 5;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-hidden {
+.mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.mob-menu__btn {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.mob-nav__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.mob-nav__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.mob-nav__link--current {
+  color: var(--accent-color);
+}
+
+.mob-contacts {
+  padding-top: 302px;
+}
+
+.mob-contact__item {
+  padding-bottom: 32px;
+}
+
+.mob-contact__phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.mob-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mob-networks__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-networks__item + .mob-networks__item {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

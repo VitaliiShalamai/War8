@@ -20,9 +20,7 @@ header {
 .header {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
+
   @media screen and (min-width: 768px) {
       padding-top: 21px;
       padding-bottom: 21px;
