@@ -25,9 +25,9 @@
         <div class="container header">
             <a href="./index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
 
-            <button type="button" class="mobile-btn">
-                <svg class="mobile-btn__icon" width="40" height="40">
-                    <use href="./images/icons.svg#mob_menu"></use>
+            <button class="menu-btn" data-menu-open>
+                <svg class="menu-btn__icon " width="40" height="40">
+                    <use href="./images/icons.svg#mob-menu"></use>
                 </svg>
             </button>
 
@@ -512,6 +512,15 @@
         </div>
     </footer>
 
+    <!--MOBILE MENU  -->
+    <div class="mobile-menu is-hidden" data-menu>
+        <button data-menu-close class="menu-mobile__button">
+            <svg class="menu-mobile__close " width="40" height="40">
+                <use href="./images/icons.svg#mob-close"></use>
+            </svg>
+        </button>
+    </div>
+
     <!-- Fixed Header script -->
 
     <!-- <script>
@@ -522,9 +531,10 @@
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script> -->
 
-    <!-- Modal script -->
+    <!-- SCRIPT -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 

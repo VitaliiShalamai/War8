@@ -32,19 +32,3 @@ header {
       padding-bottom: 25px;
     }
 }
-
-.mobile-btn {
-  border: none;
-  background-color: transparent;
-  display: none;
-  margin-left: auto;
-
-  &__icon {
-    padding: 0px;
-  }
-
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
-}
-
