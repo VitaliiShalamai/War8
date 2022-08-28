@@ -1020,12 +1020,14 @@ textarea:hover, textarea:focus {
             justify-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
 .community {
   margin-left: 70px;
-  padding: 20px;
 }
 
 @media screen and (max-width: 767px) {

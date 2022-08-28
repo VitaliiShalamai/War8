@@ -53,12 +53,12 @@
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
+    align-items: baseline;
 }
 }
 
 .community {
   margin-left: 70px;
-  padding: 20px;
   @media screen and (max-width: 767px) {
     margin: 0;
     margin-top: 60px;
