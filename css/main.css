@@ -1194,14 +1194,14 @@ textarea:hover, textarea:focus {
   fill: var(--title-color);
 }
 
+.subscribe-btn:hover, .subscribe-btn:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (max-width: 1199px) {
   .subscribe-btn {
     margin: auto;
   }
-}
-
-.subscribe-btn:hover {
-  fill: var(--accent-color);
 }
 
 .subscribe-icon {
@@ -1398,6 +1398,10 @@ textarea:hover, textarea:focus {
   padding: 0;
 }
 
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
@@ -1440,6 +1444,10 @@ textarea:hover, textarea:focus {
   width: 40px;
   height: 40px;
   padding: 0;
+}
+
+.mob-menu__btn:hover, .mob-menu__btn:focus {
+  fill: var(--accent-color);
 }
 
 .mob-nav__item {
