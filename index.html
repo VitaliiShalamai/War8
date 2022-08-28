@@ -259,15 +259,26 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img
-                            srcset="
-                                ./images/product.jpg,
-                                ./images/product@2x.jpg 2x
-                            "
-                            src="./images/product.jpg"
-                            alt="Дизайнер"
-                            width="270"
-                        >
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-1-480@1x.jpg 1x,
+                                        ./images/mobile/team-1-480@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-1-768@1x.jpg 1x,
+                                        ./images/tablet/team-1-768@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-1-1200@1x.jpg 1x,
+                                        ./images/desktop/team-1-1200@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-1-480@1x.jpg"
+                                 alt="Дизайнер"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Игорь Демьяненко</h4>
                         <p class="team__position">Product Designer</p>
                         <ul class="networks">
@@ -302,15 +313,26 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img
-                            srcset="
-                                ./images/frontend.jpg,
-                                ./images/frontend@2x.jpg 2x
-                            "
-                            src="./images/frontend.jpg"
-                            alt="Разработчик"
-                            width="270"
-                        >
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-2-480@1x.jpg 1x,
+                                        ./images/mobile/team-2-480@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-2-768@1x.jpg 1x,
+                                        ./images/tablet/team-2-768@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-2-1200@1x.jpg 1x,
+                                        ./images/desktop/team-2-1200@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-2-480@1x.jpg"
+                                 alt="Разработчик"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Ольга Репина</h4>
                         <p class="team__position">Frontend Developer</p>
                         <ul class="networks">
@@ -345,15 +367,26 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img
-                            srcset="
-                                ./images/marketing.jpg,
-                                ./images/marketing@2x.jpg 2x
-                            "
-                            src="./images/marketing.jpg"
-                            alt="Маркетолог"
-                            width="270"
-                        >
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-3-480@1x.jpg 1x,
+                                        ./images/mobile/team-3-480@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-3-768@1x.jpg 1x,
+                                        ./images/tablet/team-3-768@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-3-1200@1x.jpg 1x,
+                                        ./images/desktop/team-3-1200@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-3-480@1x.jpg"
+                                 alt="Маркетолог"
+                                 width="270">
+                        </picture>
+
                         <h4 class="team__name">Николай Тарасов</h4>
                         <p class="team__position">Marketing</p>
                         <ul class="networks">
@@ -388,15 +421,25 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img
-                            srcset="
-                                ./images/designer.jpg,
-                                ./images/designer@2x.jpg 2x
-                            "
-                            src="./images/designer.jpg"
-                            alt="Юа-Дизайнер"
-                            width="270"
-                        >
+
+                        <picture>
+                            <source srcset="
+                                        ./images/mobile/team-4-480@1x.jpg 1x,
+                                        ./images/mobile/team-4-480@2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="
+                                        ./images/tablet/team-4-768@1x.jpg 1x,
+                                        ./images/tablet/team-4-768@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="
+                                        ./images/desktop/team-4-1200@1x.jpg 1x,
+                                        ./images/desktop/team-4-1200@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                            <img src="./images/mobile/team-4-480@1x.jpg"
+                                 alt="Дизайнерг"
+                                 width="270">
+
                         <h4 class="team__name">Михаил Ермаков</h4>
                         <p class="team__position">UI Designer</p>
                         <ul class="networks">
